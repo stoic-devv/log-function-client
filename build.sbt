@@ -1,3 +1,4 @@
+
 name := "log-function-client"
 
 version := "0.1"
@@ -13,6 +14,11 @@ val generexVersion = "1.0.2"
 val httpClientVersion = "4.5.13"
 
 resolvers += Resolver.jcenterRepo
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
 
 libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-core" % logbackVersion,
