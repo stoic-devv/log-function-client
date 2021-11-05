@@ -10,6 +10,9 @@ val sfl4sVersion = "2.0.0-alpha5"
 val typesafeConfigVersion = "1.4.1"
 val apacheCommonIOVersion = "2.11.0"
 val scalacticVersion = "3.2.9"
+val scalaticPlusVersion = "3.2.9.0"
+val scalaMockVersion = "5.1.0"
+val mockitoVersion = "3.12.4"
 val generexVersion = "1.0.2"
 val httpClientVersion = "4.5.13"
 
@@ -29,7 +32,12 @@ libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % scalacticVersion,
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
+  "org.scalatestplus" %% "mockito-3-4" % scalaticPlusVersion % Test,
+  "org.scalamock" % "scalamock_2.11" % scalaMockVersion,
+  "org.mockito" % "mockito-core" % mockitoVersion,
   "com.typesafe" % "config" % typesafeConfigVersion,
   "com.github.mifmif" % "generex" % generexVersion,
-  "org.apache.httpcomponents" % "httpclient" % httpClientVersion
+  "org.apache.httpcomponents" % "httpclient" % httpClientVersion,
+  /*"org.powermock" % "powermock-module-junit4" % "1.6.4" % Test,
+  "org.powermock" % "powermock-api-mockito" % "1.6.4" % Test*/
 )
