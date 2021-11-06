@@ -35,4 +35,4 @@ function. The URL for this lambda function is configured in `resources/applicati
 The response of the GET call is prited on the console.
 
 ## Youtube video
-For more details on using this repo check out this [youtube video]()
+For more details on using this repo check out this [youtube video](https://youtu.be/yyXu3mo2VJo)
